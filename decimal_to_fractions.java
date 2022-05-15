@@ -27,7 +27,6 @@ public class decimal_to_fractions {
         bb = b.length();
         System.out.print("Enter the infinitely repeating decimal part of the number: ");
         c = reader2.readLine();
-        sca.close();
         cc = c.length();
         s = Long.parseLong(a+b+c);
         l = "You have entered " + a + "." + b;
