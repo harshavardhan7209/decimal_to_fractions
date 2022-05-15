@@ -6,7 +6,7 @@ public class decimal_to_fractions {
             canap();
         }
     }
-    public static int gcd(int a, int b) {
+    public static int gcd(double a, double b) {
         int i, hcf = 0;
       for(i = 1; i <= a || i <= b; i++) {
          if( a%i == 0 && b%i == 0 )
@@ -19,7 +19,7 @@ public class decimal_to_fractions {
         BufferedReader reader2 = new BufferedReader(reader);
         Scanner sca = new Scanner(System.in);
         String a, b, c, l, f;
-        int s, bb, cc, jj, d, e, za;
+        double s, bb, cc, jj, d, e, za;
         System.out.print("Enter integer part of the number: ");
         a = sca.next();
         System.out.print("Enter non-repeating decimal part of the number: ");
@@ -28,7 +28,7 @@ public class decimal_to_fractions {
         System.out.print("Enter the infinitely repeating decimal part of the number: ");
         c = reader2.readLine();
         cc = c.length();
-        s = Integer.parseInt(a+b+c);
+        s = Double.parseDouble(a+b+c);
         l = "You have entered " + a + "." + b;
         for (int i = 0; i <l.length();i++){
             System.out.print(" ");
@@ -45,7 +45,7 @@ public class decimal_to_fractions {
                 d = (int) (Math.pow(10, cc)-1);
                 za = s-Integer.parseInt(a);
             }else {
-                d = (int)(Math.pow(10,jj)-Math.pow(10,(bb)));
+                d = (Math.pow(10,jj)-Math.pow(10,(bb)));
                 za = s-Integer.parseInt(a+b);
             }
             e = gcd(za, d);
