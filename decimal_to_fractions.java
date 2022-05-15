@@ -27,6 +27,7 @@ public class decimal_to_fractions {
         bb = b.length();
         System.out.print("Enter the infinitely repeating decimal part of the number: ");
         c = reader2.readLine();
+        sca.close();
         cc = c.length();
         s = Long.parseLong(a+b+c);
         l = "You have entered " + a + "." + b;
@@ -42,7 +43,7 @@ public class decimal_to_fractions {
         if (c.equals("") == false) {
             jj = bb + cc;
             if (b.equals("") == true) {
-                d = (int) (Math.pow(10, cc)-1);
+                d = (long) (Math.pow(10, cc)-1);
                 za = s-Long.parseLong(a);
             }else {
                 d = (long)(Math.pow(10,jj)-Math.pow(10,(bb)));
@@ -51,7 +52,7 @@ public class decimal_to_fractions {
             e = gcd(za, d);
             f = ((za/e)+"/"+(d/e));
         }else {
-            d = (int)(Math.pow(10, bb));
+            d = (long)(Math.pow(10, bb));
             e = gcd(s,d);
             f = ((s/e)+"/"+(d/e));
         }
