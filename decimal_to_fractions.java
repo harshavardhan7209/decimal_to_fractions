@@ -21,7 +21,7 @@ public class decimal_to_fractions {
         String a, b, c, l, f;
         long s, bb, cc, jj, d, e, za;
         System.out.print("Enter integer part of the number: ");
-        a = sca.next();
+        a = reader2.readLine();
         System.out.print("Enter non-repeating decimal part of the number: ");
         b = reader2.readLine();
         bb = b.length();
