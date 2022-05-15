@@ -43,10 +43,10 @@ public class decimal_to_fractions {
             jj = bb + cc;
             if (b.equals("") == true) {
                 d = (int) (Math.pow(10, cc)-1);
-                za = s-Integer.parseInt(a);
+                za = s-Long.parseLong(a);
             }else {
                 d = (long)(Math.pow(10,jj)-Math.pow(10,(bb)));
-                za = s-Integer.parseInt(a+b);
+                za = s-Long.parseLong(a+b);
             }
             e = gcd(za, d);
             f = ((za/e)+"/"+(d/e));
